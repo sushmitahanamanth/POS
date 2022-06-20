@@ -26,7 +26,9 @@ const AddCustomer=()=>{
         }
         console.log(formData)
         dispatch(startAddingCustomer(formData))
-        
+        setName("")
+        setMobile("")
+        setEmail("")
     }
     return (
         <div>

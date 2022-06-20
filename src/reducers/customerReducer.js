@@ -9,6 +9,11 @@ const customerReducer=(state=initialCustomerState,action)=>{
             
             return [...state,action.payload]
         }
+        case 'REMOVE_CUSTOMER':{
+            return state.filter((ele)=>{
+                return ele._id!==action.payload
+            })
+        }
         default:{
             return state
         }
