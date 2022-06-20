@@ -1,4 +1,4 @@
-const initialCustomerState=[]
+const initialCustomerState=[ ]
 
 const customerReducer=(state=initialCustomerState,action)=>{
     switch(action.type){
@@ -10,7 +10,7 @@ const customerReducer=(state=initialCustomerState,action)=>{
             return [...state,action.payload]
         }
         default:{
-            return [action.payload]
+            return state
         }
     }
 }

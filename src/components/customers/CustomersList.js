@@ -11,7 +11,6 @@ const CustomersList=(props)=>{
         <div>
             <h2>Customers List</h2>
 
-
         </div>
     )
 }
